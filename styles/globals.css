@@ -1,11 +1,67 @@
-html,
+html {
+  scroll-behavior: smooth;
+}
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-image: linear-gradient(
+    340deg,
+    hsl(104, 28%, 40%),
+    hsl(58, 28%, 40%)
+  ) !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  /* background-image: url('../public/vercel.svg'); */
 }
 
+.boo {
+  background-repeat: no-repeat !important;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  background-image: url("../public/boo.jpeg");
+}
+.mid-center {
+  margin: 0 auto;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn-ieo {
+  display: inline-block;
+  background-color: hsl(14, 91%, 54%);
+  color: hsl(14, 4%, 100%);
+  padding: 1rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: font-medium;
+  transition: 0.3s;
+}
+.ieo_form {
+  background: linear-gradient(
+    136deg,
+    hsl(104, 28%, 35%) 0%,
+    hsl(58, 28%, 35%) 100%
+  );
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.75rem;
+}
+.ieo_name_input {
+  width: 70%;
+  padding: 0 0.5rem;
+  background: none;
+  color: hsl(14, 91%, 54%);
+}
+.chosen {
+  color: hsl(14, 91%, 54%);
+}
+.ieo_name_input::placeholder {
+  color: hsl(14, 4%, 85%);
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -13,4 +69,16 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: hsl(14, 4%, 100%);
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
 }
